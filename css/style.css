@@ -1,0 +1,111 @@
+#banner .banner_content{
+    background-image: url(../img/banner.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 5rem 2rem; 
+}
+#banner{
+    position: relative;
+}
+.banner_img{
+    z-index: 3;
+}
+.banner_text{
+    z-index: 3;
+    align-items: center;
+}
+.banner_text h1{
+    font-size: 3.5rem;
+    padding: 2rem 0;
+}
+.banner_text p{
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+.banner_text button{
+    padding: 20px 40px;
+    font-weight: bold;
+}
+#banner .overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fffffff2;
+}
+.stat_content{
+    display:flex;
+    justify-content: space-around;
+}
+.stat_content .card{
+   margin: 1rem; 
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   transition: 0.3s;
+}
+.stat_content .card .card-number{
+    font-size: 3rem;
+    color:#dc4f72;
+    font-weight: bold;
+}
+.stat_content .card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0);
+    /* border: none; */
+}
+
+.case_img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+#cover{
+    background-image: url(../img/bg.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+#cover .cover button{
+    padding: 10px 30px;
+}
+#cover .overlay{
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: #00000099;
+}
+#cover .cover .cover_text{
+    position: relative;
+    z-index: 3;
+    padding: 7rem 0;
+}
+#testimonials .testimonials_content .testi_text .title{
+    color:#dc4f72;
+    font-weight: bold;
+}
+
+#testimonials {
+    background-image: url(../img/b2.jpg);
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+
+
+#testimonials .carousel-inner .card-img-top img{
+    height: 300px;
+    width: 300px;
+
+}
+.item_img img{
+    height: 100px;
+    width: 100;
+    border: 2px solid #dc4f72;
+    border-radius: 50%;
+}
+.carousel-inner .carousel-item {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
