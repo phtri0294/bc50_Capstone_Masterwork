@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone_Masterwork_themeLight</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <!-- FONT GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- BOOTSTRAP 4.6.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/style_light.css">
+</head>
+
+<body>
+
+    <!-- HEADER - NAV BAR -->
+    <!-- 1/ Hữu Trí ------------------------------------->
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <!-- LOGO -->
+            <a class="navbar-brand header__logo" href="#">
+                <i class="fa fa-handshake"></i>
+                Masterwork
+            </a>
+
+            <!-- BUTTON Responsive -->
+            <button class="navbar-toggler header__responsive" type="button" data-toggle="collapse"
+                data-target="#navbarTogglerCollapse" aria-controls="navbarTogglerCollapse" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <!-- <a class="navbar-brand" href="#"></a> -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- AREA BUTTON Responsive -->
+            <div class="collapse navbar-collapse" id="navbarTogglerCollapse">
+                <!-- NAV menu -->
+                <ul class="navbar-nav header__link ml-lg-auto">
+                    <!-- ITEM 1 - Home -->
+                    <li class="nav-item active header__item">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <!-- ITEM 2 - About -->
+                    <li class="nav-item header__item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <!-- ITEM 3 - Service -->
+                    <li class="nav-item header__item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Services</a>
+                    </li>
+                    <!-- ITEM 4 - Page -->
+                    <li class="nav-item header__item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" tabindex="-1"
+                            aria-disabled="true">Pages<span class="caret"></span></a>
+                        <ul class="dropdown-menu header__dropdown">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Blog Posts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Landing Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">404 Page</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- ITEM 5 - Contact -->
+                    <li class="nav-item header__item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- BUTTON Search -->
+                <div class="search-right header__search mr-lg-3">
+                    <a href="#search" class="header__open__search" title="search" onclick="openSearch()">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <!-- OVERLAY of BUTTON Search -->
+                <div id="myOverlay" class="header__overlay">
+                    <span class="header__close__btn" onclick="closeSearch()" title="Close Overlay">×</span>
+                    <div class="header__overlay__content">
+                        <form action="/action_page.php">
+                            <input type="text" placeholder="Enter Keyword" name="search">
+                            <button type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- BUTTON Schedule -->
+                <div class="top-quote mr-lg-3 mt-lg-0 header__button">
+                    <button class="btn btn-light navbar-btn button__edit">SCHEDULE A DEMO</button>
+                </div>
+
+            </div>
+
+            <!-- BUTTON Light + Dark -->
+            <div class="mobile-position header__lightbtn">
+                <nav class="navigation">
+                    <div class="theme-switch-wrapper">
+                        <label class="theme-switch" for="checkbox">
+                            <!-- <input type="checkbox" id="checkbox"> -->
+                            <div class="mode-container">
+                                <!-- <i class="fa fa-sun"></i> -->
+                                <i class="fa fa-moon"></i>
+                            </div>
+                        </label>
+                    </div>
+                </nav>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- HEADER CAROUSEL -->
+    <!-- 2/ Lê Định ------------------------------------->
+
+    <!-- WHY CHOOSE US -->
+    <!-- 3/ Thiên Thanh ------------------------------------->
+
+    <!-- INFO - ABOUT OUR COMPANY -->
+    <!-- 4/ Hữu Trí  ------------------------------------->
+    <section class="info py-5">
+        <div class="container-fluid mt-3 pb-5">
+            <!-- TOP -->
+            <div class="row align-items-center">
+                <!-- LEFT -->
+                <div class="col-sm-6 pr-md-5">
+                    <h6 class="title__h6">ABOUT OUR COMPANY</h6>
+                    <h3 class="mb-md-4 mb-3">The Best Choice For Your Successful Business!</h3>
+                    <p class="mb-md-5 mb-4">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et est repellendus illum harum quam
+                        nihil totam reprehenderit! Ut sed eveniet quos! Asperiores officia, repudiandae similique
+                        reiciendis, ab est magnam esse nesciunt ea fuga facere voluptatem.
+                    </p>
+                    <a href="#" class="btn button__edit">Read More</a>
+                </div>
+
+                <!-- RIGHT -->
+                <div class="col-sm-6 pl-md-5 mt-sm-0 mt-5">
+                    <figure>
+                        <img src="./img/about.jpg" class="img-fluid shadow img-curve" alt="about">
+                    </figure>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- BOTTOM -->
+        <div class="container-fluid pb-lg-3 pt-4">
+            <div class="row justify-content-center">
+                <!-- ITEM 1 -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="info__counting">
+                        <h4>Happy Customers</h4>
+                        <p class="counter__number">10458</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed</p>
+                    </div>
+                </div>
+
+                <!-- ITEM 2 -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="info__counting">
+                        <h4>Winning Awards</h4>
+                        <p class="counter__number">890</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed</p>
+                    </div>
+                </div>
+
+                <!-- ITEM 3 -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="info__counting">
+                        <h4>Completed Projects</h4>
+                        <p class="counter__number">5345</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- COVER -->
+    <!-- 5/ Lê Định ------------------------------------->
+
+    <!-- QUESTIONS AND ANSWERS -->
+    <!-- 6/ Thiên Thanh ------------------------------------->
+
+    <!-- PROJECT - COMPLETED PROJECT -->
+    <!-- 7/ Hữu Trí ------------------------------------->
+    <section class="project py-5 mb-4">
+        <div class="container project__header text-center">
+            <h6 class="title__h6">FEATURED CASES</h6>
+            <h3>Completed Projects</h3>
+            <p class="my-3">
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis
+                dapibus
+                nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.
+            </p>
+        </div>
+
+        <!-- Gallery Project -->
+        <div class="project__content pt-3">
+            <!-- Nav tabs -->
+            <ul class="nav justify-content-center mb-5">
+                <li class="nav-item project__tab active">
+                    <a class="nav-link active" data-toggle="pill" href="#Project1" role="tab">Project One</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#Project2" role="tab">Project Two</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#Project3" role="tab">Project Three</a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <!-- PROJECT ONE -->
+                <div class="project__item tab-pane container active" id="Project1">
+                    <!-- ITEM 1-->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Why a visual identity system is more memorable</h3>
+                            <p>Lorem ipsum dolor sit, adipisicing elit repudiandae perferendis dolores praesentium nulla
+                                quibusdam
+                                repellendus. consequatur minus aliquam corrupti blanditiis, necessitatibus consectetur
+                                modi
+                                ipsum
+                                natus accusantium sit pariatur.
+                            </p>
+                            <!-- Button -->
+                            <a href="#" class="btn btn-success mt-3 button__edit">KNOW MORE</a>
+                        </div>
+
+                        <div class="col-md-6 mt-md-0 mt-5">
+                            <img src="./img/b4.jpg" class="img-fluid img-curve" alt="b4">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT TWO -->
+                <div class="project__item tab-pane container fade" id="Project2">
+                    <!-- ITEM 2 -->
+                    <div class="row">
+                        <div class="col-md-6 mt-md-0 mt-5">
+                            <img src="./img/b5.jpg" class="img-fluid img-curve" alt="b4">
+                        </div>
+
+                        <div class="col-md-6">
+                            <h3>Make website that looks Lorem, ipsum dolor.</h3>
+                            <p>Lorem ipsum dolor sit, adipisicing elit repudiandae perferendis dolores praesentium nulla
+                                quibusdam
+                                repellendus. consequatur minus aliquam corrupti blanditiis, necessitatibus consectetur
+                                modi
+                                ipsum
+                                natus accusantium sit pariatur.
+                            </p>
+                            <!-- Button -->
+                            <a href="#" class="btn btn-success mt-3 button__edit">KNOW MORE</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- PROJECT THREE -->
+                <div class="project__item tab-pane container fade" id="Project3">
+                    <!-- ITEM 3 -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Why a visual identity system is more memorable</h3>
+                            <p>Lorem ipsum dolor sit, adipisicing elit repudiandae perferendis dolores praesentium nulla
+                                quibusdam
+                                repellendus. consequatur minus aliquam corrupti blanditiis, necessitatibus consectetur
+                                modi
+                                ipsum
+                                natus accusantium sit pariatur.
+                            </p>
+                            <!-- Button -->
+                            <a href="#" class="btn btn-success mt-3 button__edit">KNOW MORE</a>
+                        </div>
+
+                        <div class="col-md-6 mt-md-0 mt-5">
+                            <img src="./img/b6.jpg" class="img-fluid img-curve" alt="b4">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR CLIENTS TESTIMONIALS -->
+    <!-- 8/ Lê Định ------------------------------------->
+
+    <!-- Ready to build your own brand community? -->
+    <!-- 9/ Thiên Thanh ------------------------------------->
+
+    <!-- FOOTER -->
+    <!-- 10/ Hữu Trí ------------------------------------->
+    <footer class="py-5">
+        <div class="container">
+            <!-- TOP FOOTER -->
+            <div class="row">
+                <div class="col-lg-6 column">
+                    <div class="row">
+                        <!-- CONTENT 1 -->
+                        <div class="col-md-4 column">
+                            <div id="meta-2" class="widget_meta">
+                                <h3 class="">Meta</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Log in</a></li>
+                                    <li><a href="#">Entries feed</a></li>
+                                    <li><a href="#">Comments feed</a>
+                                    </li>
+
+                                    <li><a href="https://wordpress.org/">WordPress.org</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- CONTENT 2 -->
+                        <div class="col-md-4 column">
+                            <div id="categories-4" class="widget_categories">
+                                <h3 class="">Categories</h3>
+                                <ul class="list-unstyled">
+                                    <li class="cat-item cat-item-2"><a href="#">Business</a>
+                                    </li>
+                                    <li class="cat-item cat-item-3"><a href="#">Design</a>
+                                    </li>
+                                    <li class="cat-item cat-item-4"><a href="#">Industry</a>
+                                    </li>
+                                    <li class="cat-item cat-item-5"><a href="#">Programming</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <!-- CONTENT 3 -->
+                        <div class="col-md-4 column">
+                            <div id="archives-4" class="widget_archive">
+                                <h3 class="">Archives</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">March 2021</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12column pl-lg-5 column4 mt-lg-0 mt-5">
+                    <h3>Newsletter </h3>
+                    <div class="end-column footer__news">
+                        <h4>Get latest updates and offers.</h4>
+                        <form action="" class="subscribe" method="post">
+                            <input type="email" name="email" placeholder="Email Address" required="">
+                            <button type="submit" class="button__edit">Go</button>
+                        </form>
+                        <p>Sign up for our latest news & articles. We won’t give you spam mails.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- BOTTOM FOOTER -->
+            <div class="d-flex below-section justify-content-between align-items-center pt-4 mt-5 footer__bottom">
+                <!-- LEFT - Copy right -->
+                <div class="columns text-lg-left text-center">
+                    <p class="CopyRights">&copy; 2023 Masterwork. All Rights Reserved |
+                        WordPress Theme by <a href="#">W3Layouts. </a>
+                    </p>
+                </div>
+
+                <!-- RIGHT - Social Media -->
+                <div class="columns-2 mt-lg-0 mt-3 FooterSocial">
+                    <ul class="social list-unstyled">
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-google"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- BOTTOM TO TOP -->
+    <!-- 11/ Hữu Trí ------------------------------------->
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <!-- ------------------------------------------------------------------------------ -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function openSearch() {
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function closeSearch() {
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
+
+    <!-- JQUERY WAYPOINT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+        integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- COUNTING UP -->
+    <script src="./js/jquery.countup.min.js"></script>
+
+    <script>
+        $('.counter__number').countUp();
+    </script>
+
+
+
+    </script>
+</body>
+
+</html>

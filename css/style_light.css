@@ -1,0 +1,420 @@
+/* Capstone_Masterwork Style LIGHT */
+/* <!-- EDIT BOOTSTRAP DEFAULT ############################################> */
+
+
+/* <!-- EDIT BOOTSTRAP DEFAULT ############################################> */
+
+/* ------------------------------------------------------------------- */
+/* <!-- GLOBAL ###############################################> */
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+    text-align: left;
+    /* color: #404040; */
+    color: #5A5A5A;
+    background-color: #fff;
+
+    font-size: 1rem;
+    /* font-size default = 16px */
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5;
+}
+
+/* <!-- EDIT BUTTON ############################################> */
+.button__edit {
+    background-color: white;
+    border-color: #dc4f72;
+    color: #dc4f72;
+
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 52px;
+    margin: 0px;
+    padding: 0px 30px;
+    display: inline-block;
+    text-transform: uppercase;
+
+    transition: all 0.5s;
+}
+
+.button__edit:hover{
+    color: white;
+    background-color: #dc4f72;
+}
+
+/* <!-- EDIT TITLE H6 ############################################> */
+.title__h6 {
+    color: #dc4f72;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+
+/* <!-- EDIT TITLE H3 ############################################> */
+.title__h3{
+    color: #2c3038;
+    font-size: 2.875rem;
+    font-weight: 700;
+
+    line-height: 1;
+}
+
+
+/* ------------------------------------------------------------------- */
+/* <!-- HEADER NAV BAR --> */
+header {
+    background-color: white;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+    display: grid;
+    align-items: center;
+    /* height: 90px; */
+
+    transition: all 0.4s ease 0s;
+}
+
+
+
+#navbarTogglerCollapse {
+    text-align: center;
+}
+
+#navbarTogglerCollapse .header__dropdown {
+    text-align: center;
+}
+
+.header__logo {
+    color: #dc4f72 !important;
+    font-size: 1.625rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.header__item {
+    position: relative;
+}
+
+.header__item::after {
+    content: "";
+    background-color: #dc4f72;
+    width: 0;
+    height: 3px;
+
+    position: absolute;
+    bottom: 0px;
+    left: 8px;
+
+    transition: all 0.5s;
+}
+
+.header__item:hover::after {
+    width: 40%;
+}
+
+.header__item:hover a {
+    color: #dc4f72 !important;
+}
+
+.header__search i {
+    background-color: #f9fbfd;
+    color: #8b8b8b;
+    /* opacity: 0.7; */
+
+    font-size: 15px;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+
+    border-radius: 50px;
+    border: 1px solid #eee;
+}
+
+.header__button:hover button {
+    color: white !important;
+    background-color: #dc4f72 !important;
+}
+
+/* <!-- OVERLAY of BUTTON Search #######--> */
+.header__overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.header__overlay__content {
+    position: relative;
+    top: 46%;
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+}
+
+.header__overlay .header__close__btn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+}
+
+.header__overlay .header__close__btn:hover {
+    color: #ccc;
+}
+
+.header__overlay input[type=text] {
+    background-color: white;
+    color: black;
+
+    border: 1px solid var(--border-color);
+    border-radius: 0;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    border-right: none;
+
+    float: left;
+    width: 80%;
+    line-height: 25px;
+    height: 55px;
+    padding: 15px 20px 12px;
+
+    outline: none;
+    transition: all 0.5s;
+
+}
+
+.header__overlay input[type=text]:hover {
+    background: #f1f1f1;
+}
+
+.header__overlay button {
+    background-color: #dc4f72;
+    color: white;
+
+    border: none;
+    border-left: none;
+    border-radius: initial;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 0 25px;
+
+    float: left;
+    width: 20%;
+    text-align: center;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    line-height: 28px;
+    height: 55px;
+
+    outline: none;
+    transition: all 0.5s;
+}
+
+.header__overlay button:hover {
+    opacity: 0.8;
+}
+
+/* <!-- OVERLAY of BUTTON Search #######--> */
+
+/* <!-- TEST OF BUTTON Light + Dark #######--> */
+.header__lightbtn i {
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+
+/* .header__lightbtn{
+    position: relative;
+}
+
+.header__lightbtn input{
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
+.header__lightbtn i:nth-child(1){
+    opacity: 1;
+}
+
+.header__lightbtn i:nth-child(2){
+    opacity: 0;
+}
+
+.header__lightbtn input:checked i:nth-child(1){
+    opacity: 0;
+}
+
+.header__lightbtn input:checked i:nth-child(2){
+    opacity: 1;
+} */
+
+
+/* ------------------------------------------------------------------- */
+/* <!-- INFO - ABOUT OUR COMPANY --> */
+.info {
+    background-color: #f7f9fc;
+}
+
+.info h3 {
+    color: #2c3038;
+    font-size: 2.1875rem;
+    font-weight: 700;
+
+    line-height: 40px;
+}
+
+.info__counting {
+    background-color: white;
+    padding: 2rem;
+}
+
+.info__counting .counter__number {
+    color: #dc4f72;
+    font-size: 3.125rem;
+    line-height: 1;
+    font-weight: 700;
+
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+/* ------------------------------------------------------------------- */
+/* <!-- PROJECT - COMPLETED PROJECT --> */
+/* .project .project__header{
+    margin: auto;
+} */
+.project h3 {
+    color: #2c3038;
+    font-size: 2.875rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.project__content li{
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+    width: 30%;
+}
+
+.project__content li a{
+    color: #4E5B61;
+}
+
+.project__content .project__tab a{
+    color: #dc4f72;
+}
+
+.project__tab {
+    border-bottom: 3px #dc4f72 solid;
+    color: #dc4f72;
+    margin-bottom: -1px;
+}
+
+.project__item h3{
+    color: #2c3038;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+
+    margin-bottom: 16px;
+}
+
+.project__item p{
+    color: #5a5a5a;
+    
+    font-size: 16px;
+    line-height: 24.5px;
+
+    margin-bottom: 16px;
+}
+
+
+
+/* ------------------------------------------------------------------- */
+/* <!-- FOOTER -  --> */
+footer {
+    background-color: #f7f9fc;
+    color: #2c3038;
+}
+
+footer a {
+    color: #2c3038;
+}
+
+footer a:hover {
+    color: #dc4f72;
+    text-decoration: none;
+}
+
+footer h3 {
+    color: #2c3038;
+    font-size: 1.25rem;
+    font-weight: 700;
+
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+footer h4 {
+    color: #2c3038;
+    font-size: 1.125rem;
+    font-weight: 500;
+
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+.footer__news {
+    background-color: #fff;
+    box-shadow: 1px 5px 7.5px rgba(14, 13, 13, 0.2);
+    padding: 2em;
+    border-radius: 6px;
+
+}
+
+.footer__news input {
+    background-color: #f7f9fc;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+
+    color: #2c3038;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 20px;
+}
+
+.footer__bottom li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.footer__bottom li i {
+    color: #2c3038;
+    width: 36px;
+}
+
+.footer__bottom li i:hover{
+    color: #dc4f72;
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone_Masterwork_themeLight</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <!-- FONT GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- BOOTSTRAP 4.6.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/style_dark.css">
+</head>
+
+<body>
+
+    <!-- HEADER NAV BAR -->
+    <!-- 1/ Hữu Trí ------------------------------------->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top text-light">
+            <!-- LOGO -->
+            <a class="navbar-brand header__logo" href="#">
+                <i class="fa fa-handshake"></i>
+                Masterwork
+            </a>
+
+            <!-- BUTTON Responsive -->
+            <button class="navbar-toggler header__responsive" type="button" data-toggle="collapse"
+                data-target="#navbarTogglerCollapse" aria-controls="navbarTogglerCollapse" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <!-- <a class="navbar-brand" href="#"></a> -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+
+            <div class="collapse navbar-collapse" id="navbarTogglerCollapse">
+                <!-- NAV menu -->
+                <ul class="navbar-nav header__link ml-9 mr-auto mt-2 mt-lg-0">
+                    <!-- ITEM 1 - Home -->
+                    <li class="nav-item active header__item">
+                        <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <!-- ITEM 2 - About -->
+                    <li class="nav-item header__item">
+                        <a class="nav-link text-white" href="#">About</a>
+                    </li>
+                    <!-- ITEM 3 - Service -->
+                    <li class="nav-item header__item">
+                        <a class="nav-link text-white" href="#" tabindex="-1" aria-disabled="true">Services</a>
+                    </li>
+                    <!-- ITEM 4 - Page -->
+                    <li class="nav-item header__item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#" tabindex="-1"
+                            aria-disabled="true">Pages<span class="caret"></span></a>
+                        <ul class="dropdown-menu header__dropdown">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#" tabindex="-1" aria-disabled="true">Blog Posts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#" tabindex="-1" aria-disabled="true">Landing Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#" tabindex="-1" aria-disabled="true">404 Page</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- ITEM 5 - Contact -->
+                    <li class="nav-item header__item">
+                        <a class="nav-link text-white" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- BUTTON Search -->
+                <div class="search-right header__search mr-lg-3">
+                    <a href="#search" class="header__open__search" title="search" onclick="openSearch()">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <!-- OVERLAY of BUTTON Search -->
+                <div id="myOverlay" class="header__overlay">
+                    <span class="header__close__btn" onclick="closeSearch()" title="Close Overlay">×</span>
+                    <div class="header__overlay__content">
+                        <form action="/action_page.php">
+                            <input type="text" placeholder="Enter Keyword" name="search">
+                            <button type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- BUTTON Schedule -->
+                <div class="top-quote mr-lg-3 mt-lg-0 header__button">
+                    <button class="btn btn-light navbar-btn button__edit__hover">SCHEDULE A DEMO</button>
+                </div>
+
+                <!-- BUTTON Light + Dark -->
+                <div class="mobile-position header__lightbtn">
+                    <nav class="navigation">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <!-- <input type="checkbox" id="checkbox"> -->
+                                <div class="mode-container">
+                                    <!-- <i class="fa fa-sun"></i> -->
+                                    <i class="fa fa-moon"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </nav>
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- HEADER CAROUSEL -->
+    <!-- 2/ Lê Định ------------------------------------->
+
+    <!-- WHY CHOOSE US -->
+    <!-- 3/ Thiên Thanh ------------------------------------->
+
+    <!-- ABOUT OUR COMPANY -->
+    <!-- 4/ Hữu Trí  ------------------------------------->
+
+    <!-- COVER -->
+    <!-- 5/ Lê Định ------------------------------------->
+
+    <!-- QUESTIONS AND ANSWERS -->
+    <!-- 6/ Thiên Thanh ------------------------------------->
+
+    <!-- FEATURED CASES -->
+    <!-- 7/ Hữu Trí ------------------------------------->
+
+    <!-- OUR CLIENTS TESTIMONIALS -->
+    <!-- 8/ Lê Định ------------------------------------->
+
+    <!-- Ready to build your own brand community? -->
+    <!-- 9/ Thiên Thanh ------------------------------------->
+
+    <!-- FOOTER -->
+    <!-- 10/ Hữu Trí ------------------------------------->
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+        function openSearch() {
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function closeSearch() {
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
+
+    </script>
+</body>
+
+</html>
