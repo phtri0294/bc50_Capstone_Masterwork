@@ -1,0 +1,259 @@
+/* Capstone_Masterwork Style LIGHT */
+/* <!-- EDIT BOOTSTRAP DEFAULT ############################################> */
+
+
+/* <!-- EDIT BOOTSTRAP DEFAULT ############################################> */
+
+/* ------------------------------------------------------------------- */
+/* <!-- GLOBAL ###############################################> */
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+    text-align: left;
+    /* color: #404040; */
+    background-color: #fff;
+    color: white;
+
+    font-size: 1rem;
+    /* font-size default = 16px */
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5;
+}
+
+/* <!-- EDIT BUTTON ############################################> */
+.button__edit__hover {
+    background-color: #131617;
+    ;
+    border-color: #dc4f72;
+    color: #dc4f72;
+
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 52px;
+    margin: 0px;
+    padding: 0px 30px;
+    display: inline-block;
+    text-transform: uppercase;
+
+    transition: all 0.5s;
+}
+
+/* ------------------------------------------------------------------- */
+/* <!-- HEADER --> */
+header {
+    background-color: #131617;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+    display: grid;
+    align-items: center;
+    /* height: 90px; */
+
+    transition: all 0.4s ease 0s;
+}
+
+#navbarTogglerCollapse {
+    text-align: center;
+}
+
+#navbarTogglerCollapse .header__dropdown {
+    background-color: #131617;
+    text-align: center;
+}
+
+.header__logo {
+    color: #dc4f72 !important;
+    font-size: 1.625rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.header__item {
+    background-color: #131617;
+    ;
+    position: relative;
+}
+
+.header__item::after {
+    content: "";
+    background-color: #dc4f72;
+    width: 20px;
+    height: 2px;
+
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
+
+    opacity: 0;
+    /* transform: translateX(0); */
+    transition: all 0.5s;
+}
+
+.header__item:hover::after {
+    animation: header__item__animate 1s;
+}
+
+.header__item:hover a {
+    color: #dc4f72 !important;
+}
+
+.header__search i {
+    background-color: #f9fbfd;
+    color: #8b8b8b;
+    /* opacity: 0.7; */
+
+    font-size: 15px;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+
+    border-radius: 50px;
+    border: 1px solid #eee;
+}
+
+.header__button:hover button {
+    color: white !important;
+    background-color: #dc4f72 !important;
+}
+
+/* <!-- OVERLAY of BUTTON Search #######--> */
+.header__overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.header__overlay__content {
+    position: relative;
+    top: 46%;
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+}
+
+.header__overlay .header__close__btn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+}
+
+.header__overlay .header__close__btn:hover {
+    color: #ccc;
+}
+
+.header__overlay input[type=text] {
+    background-color: white;
+    color: black;
+
+    border: 1px solid var(--border-color);
+    border-radius: 0;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    border-right: none;
+
+    float: left;
+    width: 80%;
+    line-height: 25px;
+    height: 55px;
+    padding: 15px 20px 12px;
+
+    outline: none;
+    transition: all 0.5s;
+
+}
+
+.header__overlay input[type=text]:hover {
+    background: #f1f1f1;
+}
+
+.header__overlay button {
+    background-color: #dc4f72;
+    color: white;
+
+    border: none;
+    border-left: none;
+    border-radius: initial;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 0 25px;
+
+    float: left;
+    width: 20%;
+    text-align: center;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    line-height: 28px;
+    height: 55px;
+
+    outline: none;
+    transition: all 0.5s;
+}
+
+.header__overlay button:hover {
+    opacity: 0.8;
+}
+
+/* <!-- OVERLAY of BUTTON Search #######--> */
+
+/* <!-- TEST OF BUTTON Light + Dark #######--> */
+.header__lightbtn i {
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+
+/* .header__lightbtn{
+    position: relative;
+}
+
+.header__lightbtn input{
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
+.header__lightbtn i:nth-child(1){
+    opacity: 1;
+}
+
+.header__lightbtn i:nth-child(2){
+    opacity: 0;
+}
+
+.header__lightbtn input:checked i:nth-child(1){
+    opacity: 0;
+}
+
+.header__lightbtn input:checked i:nth-child(2){
+    opacity: 1;
+} */
+
+@keyframes header__item__animate {
+    from {
+        opacity: 0;
+        transform: translateX(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(50%);
+    }
+}
