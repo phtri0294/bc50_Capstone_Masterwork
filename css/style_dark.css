@@ -1,9 +1,4 @@
-/* Capstone_Masterwork Style LIGHT */
-/* <!-- EDIT BOOTSTRAP DEFAULT ############################################> */
-
-
-/* <!-- EDIT BOOTSTRAP DEFAULT ############################################> */
-
+/* Capstone Masterwork THEME DARK */
 /* ------------------------------------------------------------------- */
 /* <!-- GLOBAL ###############################################> */
 body {
@@ -18,9 +13,9 @@ select,
 optgroup,
 textarea {
     text-align: left;
-    /* color: #404040; */
-    background-color: #fff;
-    color: white;
+    color: #b7b7b7;
+    /* color: #5A5A5A; */
+    background-color: #191c1d;
 
     font-size: 1rem;
     /* font-size default = 16px */
@@ -29,9 +24,8 @@ textarea {
 }
 
 /* <!-- EDIT BUTTON ############################################> */
-.button__edit__hover {
+.button__edit {
     background-color: #131617;
-    ;
     border-color: #dc4f72;
     color: #dc4f72;
 
@@ -42,119 +36,153 @@ textarea {
     padding: 0px 30px;
     display: inline-block;
     text-transform: uppercase;
-
     transition: all 0.5s;
 }
 
-/* ------------------------------------------------------------------- */
-/* <!-- HEADER --> */
+.button__edit:hover {
+    color: white;
+    background-color: #dc4f72;
+}
+
+.button__theme {
+    background-color: #dc4f72;
+    border: solid #dc4f72;
+    color: white;
+
+    width: 30%;
+    text-align: center;
+    border-radius: 6px;
+    outline: none;
+
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+/* <!-- EDIT TITLE H6 ############################################> */
+.title__h6 {
+    color: #dc4f72;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+
+/* <!-- EDIT TITLE H3 ############################################> */
+.title__h3 {
+    /* color: #2c3038; */
+    color: white;
+    font-size: 2.875rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+
+/* <!-- HEADER NAV BAR --> */
+/* <!-- 1/ Hữu Trí ----------------------------------------------------> */
 header {
     background-color: #131617;
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
     display: grid;
     align-items: center;
-    /* height: 90px; */
 
     transition: all 0.4s ease 0s;
 }
 
-#navbarTogglerCollapse {
-    text-align: center;
-}
-
 #navbarTogglerCollapse .header__dropdown {
-    background-color: #131617;
     text-align: center;
 }
 
 .header__logo {
     color: #dc4f72 !important;
+    /* Important */
     font-size: 1.625rem;
     font-weight: 700;
     letter-spacing: -1px;
 }
 
 .header__item {
-    background-color: #131617;
-    ;
     position: relative;
 }
 
 .header__item::after {
     content: "";
     background-color: #dc4f72;
-    width: 20px;
-    height: 2px;
+    width: 0;
+    height: 3px;
 
     position: absolute;
+    bottom: 0px;
     left: 8px;
-    bottom: 8px;
-
-    opacity: 0;
-    /* transform: translateX(0); */
     transition: all 0.5s;
 }
 
 .header__item:hover::after {
-    animation: header__item__animate 1s;
+    width: 40%;
 }
 
 .header__item:hover a {
     color: #dc4f72 !important;
+    /* Important */
 }
 
 .header__search i {
     background-color: #f9fbfd;
     color: #8b8b8b;
-    /* opacity: 0.7; */
-
-    font-size: 15px;
+    font-size: 0.9375rem;
     width: 40px;
     height: 40px;
     line-height: 38px;
     text-align: center;
-
     border-radius: 50px;
     border: 1px solid #eee;
 }
 
 .header__button:hover button {
     color: white !important;
+    /* Important */
     background-color: #dc4f72 !important;
+    /* Important */
 }
 
 /* <!-- OVERLAY of BUTTON Search #######--> */
 .header__overlay {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
     height: 100%;
     width: 100%;
     display: none;
+
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.9);
 }
 
-.header__overlay__content {
-    position: relative;
+.header__overlaycontent {
     top: 46%;
     width: 80%;
     text-align: center;
     margin-top: 30px;
     margin: auto;
+
+    position: relative;
 }
 
-.header__overlay .header__close__btn {
+.header__overlay .header__closebtn {
+    color: white;
+    font-size: 3.75rem;
+    cursor: pointer;
+
     position: absolute;
     top: 20px;
     right: 45px;
-    font-size: 60px;
-    cursor: pointer;
-    color: white;
 }
 
-.header__overlay .header__close__btn:hover {
+.header__overlay .header__closebtn:hover {
     color: #ccc;
 }
 
@@ -173,10 +201,8 @@ header {
     line-height: 25px;
     height: 55px;
     padding: 15px 20px 12px;
-
     outline: none;
     transition: all 0.5s;
-
 }
 
 .header__overlay input[type=text]:hover {
@@ -210,59 +236,254 @@ header {
     opacity: 0.8;
 }
 
-/* <!-- OVERLAY of BUTTON Search #######--> */
+/* EDIT BOOTSTRAP: navbar-toggler ###################################*/
+.navbar-light .navbar-toggler-icon {
+    background-image: none;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+}
 
-/* <!-- TEST OF BUTTON Light + Dark #######--> */
+.navbar-light .navbar-toggler {
+    border-color: #dc4f72;
+    background-color: #dc4f72;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #dc4f72;
+}
+
+/* <!--  BUTTON Light + Dark #################--> */
 .header__lightbtn i {
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-top: 15px;
 }
 
-
-/* .header__lightbtn{
-    position: relative;
-}
-
-.header__lightbtn input{
-    display: none;
-    position: absolute;
-    top: 5px;
-    left: 0;
-}
-
-.header__lightbtn i:nth-child(1){
-    opacity: 1;
-}
-
-.header__lightbtn i:nth-child(2){
-    opacity: 0;
-}
-
-.header__lightbtn input:checked i:nth-child(1){
-    opacity: 0;
-}
-
-.header__lightbtn input:checked i:nth-child(2){
-    opacity: 1;
+/* <!-- INFO - ABOUT OUR COMPANY --> */
+/* <!-- 4/ Hữu Trí ----------------------------------------------------> */
+/* .info {
+    background-color: #f7f9fc;
 } */
+.info h3 {
+    font-size: 2.1875rem;
+    font-weight: 700;
+    line-height: 40px;
+}
 
-@keyframes header__item__animate {
-    from {
-        opacity: 0;
-        transform: translateX(0);
-    }
+.info__counting {
+    background-color: #131617;
+    padding: 2rem;
+}
 
-    to {
-        opacity: 1;
-        transform: translateX(50%);
+.info__counting .counter__number {
+    color: #dc4f72;
+    font-size: 3.125rem;
+    line-height: 1;
+    font-weight: 700;
+
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+/* <!-- PROJECT - COMPLETED PROJECT --> */
+/* <!-- 7/ Hữu Trí ----------------------------------------------------> */
+.project {
+    background-color: #131617;
+}
+
+.project h3 {
+    font-size: 2.875rem;
+    font-weight: 700;
+
+    line-height: 1;
+}
+
+.project__content li {
+    font-size: 1.375rem;
+    font-weight: 700;
+    text-align: center;
+    width: 30%;
+}
+
+.project__content li a {
+    color: white;
+}
+
+/* EDIT BOOTSTRAP: nav-pills ###########################*/
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #dc4f72;
+    background-color: #131617;
+
+    border-radius: 0;
+    border-bottom: solid 3px #dc4f72;
+}
+
+.project__tab {
+    border-bottom: solid 3px rgb(193, 193, 193);
+    ;
+}
+
+.project__item h3 {
+    font-size: 1.875rem;
+    line-height: 36px;
+    font-weight: 700;
+
+    margin-bottom: 16px;
+}
+
+.project__item p {
+    color: #b7b7b7;
+    line-height: 24.5px;
+
+    margin-bottom: 16px;
+}
+
+/* <!-- FOOTER --> */
+/* <!-- 10/ Hữu Trí ----------------------------------------------------> */
+footer {
+    color: #b7b7b7;
+    /* background-color: #f7f9fc; */
+}
+
+footer li {
+    display: block;
+    list-style: none;
+    margin: 10px 0;
+}
+
+footer a {
+    color: #656f7b;
+}
+
+footer a:hover {
+    color: #dc4f72;
+    text-decoration: none;
+}
+
+footer h4 {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+footer h5 {
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 500;
+
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+.footer__news {
+    background-color: #131617;
+    box-shadow: 1px 5px 7.5px rgba(14, 13, 13, 0.2);
+    padding: 2em;
+    border-radius: 6px;
+}
+
+.footer__news p{
+    margin-top: 10px;
+}
+
+.footer__news input {
+    color: #2c3038;
+    background-color: #f7f9fc;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+
+    font-weight: 600;
+    padding: 12px 20px;
+}
+
+.footer__bottom {
+    border-top: 1px solid #eee;
+}
+
+.footer__bottom li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.footer__bottom li i {
+    /* color: #2c3038; */
+    color: white;
+    width: 36px;
+}
+
+.footer__bottom li i:hover {
+    color: #dc4f72;
+}
+
+.footer__social {
+    text-align: center;
+}
+
+/* ------------------------- */
+/* <!-- BACK TO TOP --> */
+.backToTop {
+    background: #e4819b;
+    color: white;
+    display: block;
+    width: 50px;
+    height: 45px;
+    line-height: 50px;
+    text-align: center;
+    visibility: hidden;
+
+    position: fixed;
+    z-index: 99;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 0.7;
+}
+
+.btnBackToTop a:hover {
+    color: white;
+    text-decoration: none;
+    opacity: 1;
+}
+
+/* REPONSIVE  */
+@media only screen and (max-width: 992px) {
+    .info__counting {
+        margin: 1rem;
     }
 }
-/**Header Banner*/
+
+@media only screen and (max-width: 992px) {
+    .header__lightbtn {
+        position: absolute;
+        right: 80px;
+        top: 8px;
+    }
+}
+
+/* <!-- HEADER BANNER --> */
+/* <!-- 2/ Lê Định -------------------------------------------------> */
 #banner .banner_content{
     background-image: url(../img/banner.jpg);
     background-attachment: fixed;
     background-size: cover;
-    padding: 0rem 5rem; 
+    padding: 5rem 2rem;
 }
 #banner{
     position: relative;
@@ -327,7 +548,10 @@ header {
     width: 100%;
     border-radius: 10px;
 } 
-/**Cover*/
+
+
+/* <!-- COVER --> */
+/* <!-- 5/ Lê Định -------------------------------------------------> */
 #cover{
     background-image: url(../img/bg.jpg);
     background-position:center;
@@ -352,7 +576,9 @@ header {
     z-index: 3;
     padding: 7rem 0;
 }
-/**Our client*/
+
+/* <!-- OUR CLIENTS TESTIMONIALS --> */
+/* <!-- 8/ Lê Định -------------------------------------------------> */
 #testimonials .testimonials_content .testi_text .title{
     color:#dc4f72;
     font-weight: bold;
