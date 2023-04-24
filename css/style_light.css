@@ -60,6 +60,10 @@ textarea {
     cursor: pointer;
 }
 
+button:focus{
+    outline: none;
+}
+
 /* <!-- EDIT TITLE H6 ############################################> */
 .title__h6 {
     color: #dc4f72;
@@ -252,13 +256,6 @@ header {
     margin-top: 15px;
 }
 
-
-/* <!-- HEADER CAROUSEL --> */
-/* <!-- 2/ Lê Định -------------------------------------------------> */
-
-/* <!-- WHY CHOOSE US --> */
-/* <!-- 3/ Thiên Thanh ---------------------------------------------> */
-
 /* <!-- INFO - ABOUT OUR COMPANY --> */
 /* <!-- 4/ Hữu Trí ----------------------------------------------------> */
 .info {
@@ -286,12 +283,6 @@ header {
     margin-bottom: 15px;
     margin-top: 10px;
 }
-
-/* <!-- COVER --> */
-/* <!-- 5/ Lê Định -------------------------------------------------> */
-
-/* <!-- QUESTIONS AND ANSWERS --> */
-/* <!-- 6/ Thiên Thanh ---------------------------------------------> */
 
 /* <!-- PROJECT - COMPLETED PROJECT --> */
 /* <!-- 7/ Hữu Trí ----------------------------------------------------> */
@@ -340,12 +331,6 @@ header {
 
     margin-bottom: 16px;
 }
-
-/* <!-- OUR CLIENTS TESTIMONIALS --> */
-/* <!-- 8/ Lê Định -------------------------------------------------> */
-
-/* <!-- READY TO BUILD --> */
-/* <!-- 9/ Thiên Thanh ---------------------------------------------> */
 
 /* <!-- FOOTER --> */
 /* <!-- 10/ Hữu Trí ----------------------------------------------------> */
@@ -542,7 +527,6 @@ footer h5 {
 
 /* <!-- COVER --> */
 /* <!-- 5/ Lê Định -------------------------------------------------> */
-
 #cover{
     background-image: url(../img/bg.jpg);
     background-position:center;
@@ -641,3 +625,131 @@ footer h5 {
 .indicator ul li:not(.active):hover{
     background-color: #dc4f72;
 }
+
+/* <!-- WHY CHOOSE US --> */
+/* <!-- 3/ Thiên Thanh ---------------------------------------------> */
+.whychoose {
+    color: black;
+}
+
+.whychoose__block {
+    padding: 3rem;
+    background-color: #f7f9fc;
+}
+
+.whychoose__block a {
+    color: black;
+    text-decoration: none;
+}
+
+.whychoose__block a h3 {
+    font-size: 26px;
+    line-height: 35px;
+    font-weight: 700;
+}
+
+.whychoose__block a p {
+    color: #5a5a5a;
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 24.5px;
+}
+
+.whychoose__animate:hover {
+    animation: downToUp 1s;
+}
+
+@keyframes downToUp {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-30px);
+    }
+}
+
+/* <!-- QUESTIONS AND ANSWERS --> */
+/* <!-- 6/ Thiên Thanh ---------------------------------------------> */
+.faq {
+    color: black;
+    background-color: #f7f9fc;
+}
+
+
+.faq__block {
+    margin-top: 20px;
+}
+
+.faq h2 {
+    font-size: 20px;
+    line-height: 1;
+    font-weight: normal;
+
+    width: 90%;
+    display: block;
+
+    cursor: pointer;
+
+    padding: 20px 0 20px 20px;
+    margin: 20px 0;
+    background-color: white;
+}
+
+.faq__item {
+    position: relative;
+}
+
+.faq__icon {
+    position: absolute;
+    top: 17px;
+    right: 100px;
+}
+
+/* Edit Bootstrap: card */
+.faq .card {
+    border: none;
+}
+
+.faq .card-body {
+    margin-top: -30px;
+    width: 90%;
+}
+
+/* <!-- READY TO BUILD --> */
+/* <!-- 9/ Thiên Thanh ---------------------------------------------> */
+.community__block {
+    color: black;
+}
+
+.btn__community__2 {
+    background-color: #dc4f72;
+    color: white;
+}
+
+.btn__outline {
+    color: #dc4f72;
+    background-color: white;
+    border-color: #dc4f72;
+}
+
+.btn__outline:hover {
+    color: #fff;
+    background-color: #dc4f72;
+    border-color: #dc4f72;
+}
+
+/* Edit Bootstrap: btn */
+.btn-primary {
+    color: #fff;
+    background-color: #dc4f72;
+    border-color: #dc4f72;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #dc4f72;
+    border-color: #dc4f72;
+}
+
+

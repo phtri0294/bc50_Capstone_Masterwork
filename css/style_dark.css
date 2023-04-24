@@ -60,6 +60,10 @@ textarea {
     cursor: pointer;
 }
 
+button:focus {
+    outline: none;
+}
+
 /* <!-- EDIT TITLE H6 ############################################> */
 .title__h6 {
     color: #dc4f72;
@@ -393,13 +397,13 @@ footer h5 {
     border-radius: 6px;
 }
 
-.footer__news p{
+.footer__news p {
     margin-top: 10px;
 }
 
 .footer__news input {
     color: #2c3038;
-    background-color: #f7f9fc;
+    background-color: #191c1d;
     border: none;
     border-radius: 6px;
     outline: none;
@@ -479,99 +483,114 @@ footer h5 {
 
 /* <!-- HEADER BANNER --> */
 /* <!-- 2/ Lê Định -------------------------------------------------> */
-#banner .banner_content{
+#banner .banner_content {
     background-image: url(../img/banner.jpg);
     background-attachment: fixed;
     background-size: cover;
     padding: 5rem 2rem;
 }
-#banner{
+
+#banner {
     position: relative;
 }
-.banner_img{
+
+.banner_img {
     z-index: 3;
 }
-.banner_text{
+
+.banner_text {
     z-index: 3;
     align-items: center;
     color: white;
 }
-.banner_text h1{
+
+.banner_text h1 {
     color: white;
     font-size: 3.5rem;
     padding: 2rem 0;
     color: white;
 }
-.banner_text p{
+
+.banner_text p {
     font-size: 1.5rem;
     padding-bottom: 2rem;
     color: white;
 }
-.banner_text button{
+
+.banner_text button {
     padding: 20px 40px;
     font-weight: bold;
 }
-#banner .overlay{
+
+#banner .overlay {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: #1d1c1cf2;
     background-image: linear-gradient(to right, black, white);
 }
-.stat_content{
-    display:flex;
+
+.stat_content {
+    display: flex;
     justify-content: space-around;
 }
-.stat_content .card{
-   margin: 1rem; 
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-   transition: 0.3s;
-   background-color: #131617;
+
+.stat_content .card {
+    margin: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+    background-color: #131617;
 }
-.stat_content .card .card-number{
+
+.stat_content .card .card-number {
     font-size: 3rem;
-    color:#dc4f72;
+    color: #dc4f72;
     font-weight: bold;
 }
-.stat_content .card .card-body{
+
+.stat_content .card .card-body {
     color: white;
 }
-.stat_content .card:hover{
+
+.stat_content .card:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0);
     /* border: none; */
 }
 
-.case_img img{
+.case_img img {
     height: 100%;
     width: 100%;
     border-radius: 10px;
-} 
+}
 
 
 /* <!-- COVER --> */
 /* <!-- 5/ Lê Định -------------------------------------------------> */
-#cover{
+#cover {
     background-image: url(../img/bg.jpg);
-    background-position:center;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative;
 }
-#cover .cover button{
+
+#cover .cover button {
     padding: 10px 30px;
 }
-#cover .overlay{
+
+#cover .overlay {
     position: absolute;
     top: 0;
-    left:0;
+    left: 0;
     height: 100%;
     width: 100%;
     background-color: #00000099;
-    
+
 }
-#cover .cover .cover_text{
+
+#cover .cover .cover_text {
     position: relative;
     z-index: 3;
     padding: 7rem 0;
@@ -579,22 +598,23 @@ footer h5 {
 
 /* <!-- OUR CLIENTS TESTIMONIALS --> */
 /* <!-- 8/ Lê Định -------------------------------------------------> */
-#testimonials .testimonials_content .testi_text .title{
-    color:#dc4f72;
+#testimonials .testimonials_content .testi_text .title {
+    color: #dc4f72;
     font-weight: bold;
 }
 
 #testimonials {
     background-image: url(../img/b2.jpg);
     background-repeat: no-repeat;
-    background-size:100%;
+    background-size: 100%;
     background-attachment: fixed;
-    position:relative;
-    
+    position: relative;
+
 }
-#testimonials .overlay{
+
+#testimonials .overlay {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -602,54 +622,209 @@ footer h5 {
     background-color: #1d1c1cf2;
     background-image: linear-gradient(to right, black, white);
 }
-.testi_content{
+
+.testi_content {
     z-index: 1;
-} 
-#testimonials .carousel-inner .card-img-top img{
+}
+
+#testimonials .carousel-inner .card-img-top img {
     height: 300px;
     width: 300px;
 
 }
-.item_img img{
+
+.item_img img {
     height: 100px;
     width: 100px;
     border: 2px solid #dc4f72;
     border-radius: 50%;
 }
+
 .carousel-inner .carousel-item .item-container {
     display: flex;
     padding: 10px;
     gap: 30px;
-   
+
 }
-.carousel-inner .carousel-item .item1{
+
+.carousel-inner .carousel-item .item1 {
     height: 300px;
     background-color: #131617;
     border-radius: 10px;
 }
-.carousel-inner .carousel-item .item1{
+
+.carousel-inner .carousel-item .item1 {
     display: flex;
     padding: 10px;
     gap: 30px;
 }
+
 .item_img {
     flex-shrink: 0;
 }
+
 .item_message {
     flex-grow: 1;
 }
-.item_message span{
+
+.item_message span {
     color: rgb(194, 194, 194);
     font-size: 50px;
 }
 
-.name_item h4{
+.name_item h4 {
     color: #dc4f72;
 }
-.indicator ul li{
+
+.indicator ul li {
     background-color: #dc4f72;
     padding: 1px;
 }
-.indicator ul li:not(.active):hover{
+
+.indicator ul li:not(.active):hover {
     background-color: #dc4f72;
+}
+
+
+/* <!-- WHY CHOOSE US --> */
+/* <!-- 3/ Thiên Thanh ---------------------------------------------> */
+.whychoose {
+    background-color: #131617;
+}
+
+.whychoose__block {
+    padding: 3rem;
+    background-color: #191c1d;
+    border: 1px solid #191c1d;
+}
+
+.whychoose__block a {
+    color: black;
+    text-decoration: none;
+}
+
+.whychoose__block a h3 {
+    color: white;
+    font-size: 26px;
+    line-height: 35px;
+    font-weight: 700;
+}
+
+.whychoose__block a p {
+    color: #b7b7b7;
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 24.5px;
+}
+
+.whychoose__animate:hover .whychoose__block {
+    border: 1px solid #333;
+    animation: downToUp 1s;
+}
+
+@keyframes downToUp {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-30px);
+    }
+}
+
+/* <!-- QUESTIONS AND ANSWERS --> */
+/* <!-- 6/ Thiên Thanh ---------------------------------------------> */
+.faq {
+    color: black;
+    background-color: #191c1d;
+}
+
+.faq__block {
+    margin-top: 20px;
+}
+
+.faq h2 {
+    font-size: 20px;
+    line-height: 1;
+    font-weight: normal;
+
+    width: 90%;
+    display: block;
+
+    cursor: pointer;
+
+    padding: 20px 0 20px 20px;
+    margin: 20px 0;
+    background-color: #131617;
+    color: white;
+}
+
+.faq p {
+    color: #b7b7b7;
+}
+
+.faq__item {
+    position: relative;
+}
+
+.faq__icon {
+    color: white;
+    position: absolute;
+    top: 17px;
+    right: 100px;
+}
+
+.faq__text {
+    background-color: #131617;
+    color: #b7b7b7;
+}
+
+/* Edit Bootstrap: card */
+.faq .card {
+    border: none;
+}
+
+.faq .card-body {
+    margin-top: -30px;
+    width: 90%;
+}
+
+/* <!-- READY TO BUILD --> */
+/* <!-- 9/ Thiên Thanh ---------------------------------------------> */
+.community {
+    background-color: #131617;
+}
+
+.community__block {
+    color: #b7b7b7;
+}
+
+.btn__community__2 {
+    background-color: #dc4f72;
+    color: white;
+}
+
+.btn__outline {
+    color: #dc4f72;
+    background-color: #131617;
+    border-color: #dc4f72;
+}
+
+.btn__outline:hover {
+    color: #fff;
+    background-color: #dc4f72;
+    border-color: #dc4f72;
+}
+
+/* Edit Bootstrap: btn */
+.btn-primary {
+    color: #fff;
+    background-color: #dc4f72;
+    border-color: #dc4f72;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #dc4f72;
+    border-color: #dc4f72;
 }
